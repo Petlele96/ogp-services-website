@@ -74,7 +74,7 @@ export function Clients() {
             onMouseLeave={e => e.currentTarget.style.opacity = '0.45'}
           >
             <img
-              src={`${CLOUD}/f_auto,q_auto,h_80/${c.id}.${c.ext}`}
+              src={`${CLOUD}/q_auto,h_80/${c.id}.${c.ext}`}
               alt={c.name}
               style={{ height: '42px', width: 'auto', objectFit: 'contain' }}
             />

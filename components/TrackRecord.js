@@ -6,19 +6,22 @@ const CLOUD = 'https://res.cloudinary.com/dahhugaqf/image/upload'
 
 const records = [
   {
-    logo: 'Royal_Bafokeng_logo_iv9y0f.jpg',
+    logo: 'Royal_Bafokeng_logo_iv9y0f',
+    ext: 'jpg',
     client: 'Royal Bafokeng Administration',
     type: 'Civil Infrastructure — Facilities Services',
     scope: 'Grass cutting and vegetation management across Royal Bafokeng Administration managed facilities and grounds in the Rustenburg area.',
   },
   {
-    logo: 'Sibanye_logo_pd2ngs.png',
+    logo: 'Sibanye_logo_pd2ngs',
+    ext: 'png',
     client: 'Sibanye Stillwater',
     type: 'Mining Support Services',
     scope: 'Grass cutting and vegetation management at Sibanye Stillwater\'s PGM mining operations in Rustenburg. Work performed within active mine zones under full safety compliance.',
   },
   {
-    logo: 'Royal_Bafokeng_logo_iv9y0f.jpg',
+    logo: 'Royal_Bafokeng_logo_iv9y0f',
+    ext: 'jpg',
     client: 'RBA — Tshukudu High School',
     type: 'School Infrastructure — Civil Construction',
     scope: 'Boundary wall construction at Tshukudu High School, contracted through Royal Bafokeng Administration. Full civil scope including foundation excavation, reinforcement, brickwork, and concrete pump operations.',
@@ -40,7 +43,7 @@ function TrackCard({ record }) {
       }}
     >
       <img
-        src={`${CLOUD}/f_auto,q_auto,h_56/${record.logo}`}
+        src={`${CLOUD}/q_auto,h_56/${record.logo}.${record.ext}`}
         alt={record.client}
         style={{
           height: '28px', width: 'auto',
