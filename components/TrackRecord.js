@@ -81,7 +81,7 @@ function TrackCard({ record }) {
 
 export default function TrackRecord() {
   return (
-    <section id="track" style={{ background: '#0A0A0A', padding: '96px 52px' }}>
+    <section id="track" className="track-section" style={{ background: '#0A0A0A', padding: '96px 52px' }}>
       {/* Header */}
       <div style={{
         display: 'flex', alignItems: 'center', gap: '14px',
@@ -109,19 +109,12 @@ export default function TrackRecord() {
       </p>
 
       {/* Cards */}
-      <div style={{
+      <div className="track-grid" style={{
         display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)',
         gap: '1px', background: 'rgba(255,255,255,0.08)',
       }}>
         {records.map(r => <TrackCard key={r.client} record={r} />)}
       </div>
-
-      <style>{`
-        @media(max-width:900px) {
-          #track { padding: 64px 20px !important; }
-          #track > div:last-child { grid-template-columns: 1fr !important; }
-        }
-      `}</style>
     </section>
   )
 }

@@ -112,9 +112,9 @@ function ServiceCard({ service, span }) {
 
 export default function Services() {
   return (
-    <section id="services" style={{ padding: '96px 52px', background: '#F5F5F3' }}>
+    <section id="services" className="services-section" style={{ padding: '96px 52px', background: '#F5F5F3' }}>
       {/* Header */}
-      <div style={{
+      <div className="services-header" style={{
         display: 'flex', alignItems: 'flex-end',
         justifyContent: 'space-between', gap: '40px',
         marginBottom: '56px', flexWrap: 'wrap',
@@ -147,7 +147,7 @@ export default function Services() {
       </div>
 
       {/* Grid */}
-      <div style={{
+      <div className="services-grid" style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(3, 1fr)',
         gap: '1px', background: '#DDDDDD',
@@ -155,15 +155,6 @@ export default function Services() {
         {services.map(s => <ServiceCard key={s.num} service={s} />)}
         <ServiceCard service={miningService} span />
       </div>
-
-      <style>{`
-        @media(max-width:900px) {
-          #services { padding: 64px 20px !important; }
-          #services > div:last-child { grid-template-columns: 1fr !important; }
-          #services > div:last-child > div { grid-column: span 1 !important; }
-          #services > div:first-child { flex-direction: column !important; }
-        }
-      `}</style>
     </section>
   )
 }

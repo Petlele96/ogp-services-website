@@ -73,7 +73,7 @@ export default function Gallery() {
   return (
     <section id="gallery" style={{ background: '#0A0A0A', padding: 0 }}>
       {/* Header */}
-      <div style={{ padding: '72px 52px 48px' }}>
+      <div className="gallery-header" style={{ padding: '72px 52px 48px' }}>
         <div style={{
           display: 'flex', alignItems: 'center', gap: '14px',
           fontFamily: 'Oswald, sans-serif', fontSize: '11px',
@@ -100,7 +100,7 @@ export default function Gallery() {
         </p>
 
         {/* Tabs */}
-        <div style={{
+        <div className="gallery-tabs" style={{
           display: 'flex', gap: 0, marginTop: '28px',
           borderBottom: '1px solid rgba(255,255,255,0.1)',
         }}>
@@ -108,7 +108,7 @@ export default function Gallery() {
             { key: 'grass', label: 'Grass Cutting — Sibanye Stillwater' },
             { key: 'wall', label: 'Boundary Wall Construction — RBA School' },
           ].map(t => (
-            <button key={t.key} onClick={() => setTab(t.key)} style={{
+            <button key={t.key} onClick={() => setTab(t.key)} className="gallery-tab" style={{
               fontFamily: 'Oswald, sans-serif', fontSize: '12px',
               fontWeight: 400, letterSpacing: '2px', textTransform: 'uppercase',
               color: tab === t.key ? '#E8650A' : 'rgba(255,255,255,0.4)',
@@ -122,20 +122,11 @@ export default function Gallery() {
       </div>
 
       {/* Photo grid */}
-      <div style={{
+      <div className="gallery-grid" style={{
         display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '2px',
       }}>
         {photos.map(p => <PhotoCard key={p.id} photo={p} />)}
       </div>
-
-      <style>{`
-        @media(max-width:900px) {
-          #gallery > div:first-child { padding: 56px 20px 36px !important; }
-          #gallery > div:last-child { grid-template-columns: 1fr !important; }
-          #gallery > div:last-child > div { height: 280px !important; }
-          button[style*="padding: 14px 28px"] { padding: 12px 16px !important; font-size: 10px !important; }
-        }
-      `}</style>
     </section>
   )
 }

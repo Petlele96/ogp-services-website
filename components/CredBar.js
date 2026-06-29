@@ -15,7 +15,7 @@ export function CredBar() {
   ]
 
   return (
-    <div style={{
+    <div className="credbar" style={{
       background: '#0A0A0A', padding: '0 52px',
       display: 'flex', alignItems: 'center',
       borderBottom: '1px solid rgba(255,255,255,0.07)',
@@ -37,17 +37,12 @@ export function CredBar() {
           </span>
         </div>
       ))}
-      <span style={{
+      <span className="credbar-reg" style={{
         marginLeft: 'auto',
         fontFamily: 'Oswald, sans-serif', fontSize: '10px',
         letterSpacing: '1.5px', color: 'rgba(255,255,255,0.22)',
         paddingLeft: '28px', whiteSpace: 'nowrap',
       }}>Reg No: 2019/343931/07</span>
-
-      <style>{`@media(max-width:900px){
-        div[style*="padding: 0 52px"] { padding: 0 20px !important; }
-        span[style*="marginLeft: auto"] { display: none; }
-      }`}</style>
     </div>
   )
 }
@@ -55,7 +50,7 @@ export function CredBar() {
 // ── CLIENTS STRIP ─────────────────────────────────────────
 export function Clients() {
   return (
-    <div style={{
+    <div className="clients-strip" style={{
       background: '#F5F5F3', padding: '44px 52px',
       display: 'flex', alignItems: 'center', gap: '56px',
       borderBottom: '1px solid #E0E0E0', flexWrap: 'wrap',
@@ -90,8 +85,6 @@ export function Clients() {
           </div>
         ))}
       </div>
-
-      <style>{`@media(max-width:900px){ div[style*="padding: 44px 52px"] { padding: 32px 20px !important; gap: 24px !important; } }`}</style>
     </div>
   )
 }
@@ -106,7 +99,7 @@ export function Stats() {
   ]
 
   return (
-    <div style={{
+    <div className="stats-grid" style={{
       display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)',
       background: '#E8650A',
     }}>
@@ -127,12 +120,6 @@ export function Stats() {
           }}>{s.l}</div>
         </div>
       ))}
-
-      <style>{`@media(max-width:900px){
-        div[style*="gridTemplateColumns: repeat(4"] {
-          grid-template-columns: repeat(2, 1fr) !important;
-        }
-      }`}</style>
     </div>
   )
 }
@@ -144,7 +131,7 @@ export function EmailStrip() {
   }
 
   return (
-    <div style={{
+    <div className="email-strip" style={{
       background: 'linear-gradient(135deg, #E8650A, #D85C00)',
       padding: '28px 52px',
       display: 'flex', alignItems: 'center',
@@ -176,8 +163,6 @@ export function EmailStrip() {
         onMouseEnter={e => e.target.style.background = 'rgba(0,0,0,0.38)'}
         onMouseLeave={e => e.target.style.background = 'rgba(0,0,0,0.22)'}
       >Copy Email</button>
-
-      <style>{`@media(max-width:900px){ div[style*="padding: 28px 52px"] { padding: 24px 20px !important; flex-direction: column !important; } }`}</style>
     </div>
   )
 }

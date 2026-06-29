@@ -3,8 +3,7 @@
 import { useState, useEffect } from 'react'
 
 const CLOUD = 'https://res.cloudinary.com/dahhugaqf/image/upload'
-const T = 'f_auto,q_auto,w_1600'
-
+const T = 'f_auto,q_auto,w_1200'
 const slides = [
   { id: '20230910_120245_ikzxpe', alt: 'OGP Services grass cutting at Sibanye Stillwater mine' },
   { id: '20260211_111603_rplfr4', alt: 'OGP Services boundary wall construction RBA school' },
@@ -48,9 +47,9 @@ export default function Hero() {
       }} />
 
       {/* Content */}
-      <div style={{
+      <div className="hero-content" style={{
         position: 'relative', zIndex: 2,
-        padding: '0 52px 88px', maxWidth: '860px',
+        padding: '0 52px 88px', maxWidth: '860px', width: '100%',
       }}>
         {/* Eyebrow */}
         <div style={{
@@ -112,7 +111,7 @@ export default function Hero() {
       </div>
 
       {/* Dots */}
-      <div style={{
+      <div className="hero-dots" style={{
         position: 'absolute', bottom: '36px', right: '52px',
         zIndex: 2, display: 'flex', gap: '8px',
       }}>
@@ -127,14 +126,7 @@ export default function Hero() {
           }} />
         ))}
       </div>
-
-      <style>{`
-        @media (max-width: 900px) {
-          #top > div[style*="padding: 0 52px"] {
-            padding: 0 20px 72px !important;
-          }
-        }
-      `}</style>
     </section>
   )
 }
+
