@@ -9,7 +9,7 @@ export default function ProjectCard({ project }) {
       {photos.length > 0 && (
         <div className={`proj-photos${photos.length > 1 ? ' two' : ''}`}>
           {photos.map(p => (
-            <img key={p.id} src={`${IMG}/${p.id}.jpg`} alt={p.alt} loading="lazy" />
+            <img key={p.id || p.src} src={p.src || `${IMG}/${p.id}.jpg`} alt={p.alt} loading="lazy" />
           ))}
         </div>
       )}
