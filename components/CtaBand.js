@@ -10,9 +10,14 @@ export default function CtaBand({
         <h2>{heading}</h2>
         <p>{text}</p>
       </div>
-      <Link href="/#contact" className="btn">
-        Contact us
-      </Link>
+      <div className="cta-actions">
+        <Link href="/#contact" className="btn">
+          Contact us
+        </Link>
+        <a href="/downloads/OGP-Services-Company-Profile.pdf" download className="btn btn-ghost">
+          Download company profile
+        </a>
+      </div>
     </section>
   )
 }

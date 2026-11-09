@@ -13,6 +13,7 @@ const nearby = [
   { km: '5', name: 'Valterra Waterval' },
   { km: '7', name: 'Kroondal Mine' },
   { km: '7', name: 'Bathopele Mine' },
+  { km: '8', name: 'Sibanye Thembelani Mine' },
 ]
 
 export default function LocationMap() {

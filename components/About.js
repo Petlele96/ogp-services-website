@@ -79,6 +79,10 @@ export default function About() {
             />
           ))}
 
+          <a href="/downloads/OGP-Services-Company-Profile.pdf" download className="btn" style={{ alignSelf: 'flex-start', marginBottom: '28px' }}>
+            Download company profile (PDF)
+          </a>
+
           {/* Points */}
           <div style={{ display: 'flex', flexDirection: 'column', marginTop: '8px' }}>
             {points.map((p, i) => (

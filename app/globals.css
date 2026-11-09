@@ -272,3 +272,5 @@ h1, h2, h3, h4, h5 {
   .loc-map iframe { height: 420px; }
   .loc-lead { margin-top: -8px; }
 }
+
+.cta-actions { display: flex; gap: 14px; flex-wrap: wrap; }

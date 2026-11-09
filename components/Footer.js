@@ -8,6 +8,7 @@ const company = [
   { label: 'About Us', href: '/#about' },
   { label: 'Services', href: '/services' },
   { label: 'Projects', href: '/projects' },
+  { label: 'Company Profile (PDF)', href: '/downloads/OGP-Services-Company-Profile.pdf' },
   { label: 'Contact Us', href: '/#contact' },
   { label: 'Request a Quote', href: '/#contact' },
 ]
