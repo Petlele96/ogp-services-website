@@ -12,11 +12,13 @@ const contactItems = [
 
 const enquiryTypes = [
   'Request a Quote',
-  'Civil Construction',
   'Mining Support Services',
+  'Mining Operations & Underground Services',
+  'Plant, Earthmoving & Mine Infrastructure',
+  'Civil Construction',
   'Industrial & Commercial Cleaning',
-  'Vegetation Control & Landscaping',
-  'Waste & Spillage Management',
+  'Waste Management',
+  'Vegetation Control, Landscaping & Grounds',
   'Partnership or Subcontracting',
   'General Enquiry',
 ]

@@ -1,12 +1,8 @@
 'use client'
 
-const services = [
-  { label: 'Civil Construction', href: '/services#civil-construction' },
-  { label: 'Mining Support Services', href: '/services#mining-support' },
-  { label: 'Industrial & Commercial Cleaning', href: '/services#industrial-cleaning' },
-  { label: 'Vegetation Control & Landscaping', href: '/services#vegetation-control' },
-  { label: 'Waste & Spillage Management', href: '/services#waste-and-spillage' },
-]
+import { divisions } from '../lib/services'
+
+const services = divisions.map(d => ({ label: d.title, href: `/services#${d.id}` }))
 
 const company = [
   { label: 'About Us', href: '/#about' },

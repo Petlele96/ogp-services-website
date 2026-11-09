@@ -244,3 +244,11 @@ h1, h2, h3, h4, h5 {
   .svc-photo img { height: 220px; }
   .wa-btn { right: 14px; bottom: 14px; padding: 11px 15px; }
 }
+
+/* Services page: tagline, item descriptions, partner tag */
+.svc-tagline { font-family: 'Oswald', sans-serif; font-size: 15px; letter-spacing: 1px; text-transform: uppercase; color: #E8650A; margin: -6px 0 18px; }
+.bullets li strong { display: block; font-weight: 500; font-size: 16px; }
+.bullets li span { display: block; font-size: 14px; font-weight: 300; line-height: 1.6; color: rgba(255,255,255,0.6); margin-top: 2px; }
+.svc-block.alt .bullets li span { color: #666; }
+.partner-tag { margin-left: 10px; font-size: 10px; font-weight: 500; letter-spacing: 1.5px; color: rgba(255,255,255,0.7); border: 1px solid rgba(255,255,255,0.3); padding: 2px 8px; vertical-align: middle; }
+.svc-block.alt .partner-tag { color: #555; border-color: #bbb; }

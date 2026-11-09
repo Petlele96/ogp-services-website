@@ -5,7 +5,7 @@ import { divisions, IMG } from '../../lib/services'
 export const metadata = {
   title: 'Services',
   description:
-    'Civil construction, mining support services, industrial cleaning, vegetation control and waste management in Rustenburg and the North West.',
+    'Mining support, mining operations and underground services, plant and earthmoving, civil construction, industrial cleaning, waste management and vegetation control in Rustenburg and the North West.',
 }
 
 export default function ServicesPage() {
@@ -15,8 +15,8 @@ export default function ServicesPage() {
         <div className="eyebrow">What we do</div>
         <h1>Our Services</h1>
         <p>
-          Five service divisions for mines, community sites and public grounds in Rustenburg and the
-          North West.
+          Seven service divisions for mines, community sites and public grounds in Rustenburg and the
+          North West. Where specialist work needs a partner, we say so.
         </p>
         <nav className="anchor-strip" aria-label="Service divisions">
           {divisions.map(d => (
@@ -32,6 +32,7 @@ export default function ServicesPage() {
           <div className="svc-block-text">
             <div className="svc-block-num">{d.num}</div>
             <h2>{d.title}</h2>
+            <div className="svc-tagline">{d.tagline}</div>
             <p>{d.intro}</p>
             {d.note && <div className="svc-note">{d.note}</div>}
             <Link href="/#contact" className="btn">
@@ -47,10 +48,16 @@ export default function ServicesPage() {
             )}
             {d.groups.map(g => (
               <div className="bullets" key={g.label}>
-                <h3>{g.label}</h3>
+                <h3>
+                  {g.label}
+                  {g.partner && <span className="partner-tag">With partners</span>}
+                </h3>
                 <ul>
                   {g.items.map(item => (
-                    <li key={item}>{item}</li>
+                    <li key={item.t}>
+                      <strong>{item.t}</strong>
+                      <span>{item.d}</span>
+                    </li>
                   ))}
                 </ul>
               </div>

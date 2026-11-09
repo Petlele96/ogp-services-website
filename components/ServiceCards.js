@@ -5,7 +5,7 @@ export default function ServiceCards() {
   return (
     <section className="sec sec-light" id="services">
       <div className="eyebrow">What we deliver</div>
-      <h2 className="h2 h2-dark">Five services. One local partner.</h2>
+      <h2 className="h2 h2-dark">Seven services. One local partner.</h2>
       <div className="card-grid">
         {divisions.map(d => (
           <Link href={`/services#${d.id}`} className="svc-card" key={d.id}>
