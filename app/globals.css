@@ -255,3 +255,20 @@ h1, h2, h3, h4, h5 {
 
 .proj-photos.three { grid-template-columns: 1fr 1fr; }
 .proj-photos.three img:first-child { grid-column: span 2; height: 210px; }
+
+/* Location map */
+.loc-lead { font-size: 17px; font-weight: 300; line-height: 1.75; color: rgba(255,255,255,0.65); max-width: 640px; margin: -16px 0 32px; }
+.loc-map { border-top: 3px solid #E8650A; background: #111; }
+.loc-map iframe { display: block; width: 100%; height: 520px; border: 0; }
+.loc-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 1px; background: rgba(255,255,255,0.08); margin-top: 24px; }
+.loc-item { background: #111; padding: 18px 22px; display: flex; align-items: baseline; gap: 16px; }
+.loc-km { font-family: 'Oswald', sans-serif; font-size: 34px; font-weight: 700; line-height: 1; color: #E8650A; min-width: 78px; }
+.loc-km span { font-size: 13px; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; color: rgba(255,255,255,0.5); }
+.loc-name { font-size: 15px; font-weight: 400; color: rgba(255,255,255,0.85); }
+.loc-note { margin-top: 18px; font-size: 13px; color: rgba(255,255,255,0.45); }
+.loc-note a { color: #E8650A; text-decoration: none; }
+.loc-note a:hover { text-decoration: underline; }
+@media (max-width: 900px) {
+  .loc-map iframe { height: 420px; }
+  .loc-lead { margin-top: -8px; }
+}

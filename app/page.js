@@ -1,6 +1,7 @@
 import Hero from '../components/Hero'
 import { CredBar, Clients, Stats, EmailStrip } from '../components/CredBar'
 import WhyOGP from '../components/WhyOGP'
+import LocationMap from '../components/LocationMap'
 import ServiceCards from '../components/ServiceCards'
 import RecentProjects from '../components/RecentProjects'
 import Gallery from '../components/Gallery'
@@ -15,6 +16,7 @@ export default function Home() {
       <CredBar />
       <Clients />
       <WhyOGP />
+      <LocationMap />
       <ServiceCards />
       <RecentProjects />
       <Gallery />
