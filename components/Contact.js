@@ -6,7 +6,6 @@ const contactItems = [
   { icon: '📍', label: 'Head Office', val: 'Rustenburg, North West, South Africa' },
   { icon: '👤', label: 'Director', val: 'OG Petlele' },
   { icon: '📞', label: 'Phone / WhatsApp', val: '079 533 5440' },
-  { icon: '📧', label: 'General Enquiries', val: 'info@ogpservices.co.za' },
   { icon: '📧', label: 'Director', val: 'gratitude@ogpservices.co.za' },
   { icon: '🌐', label: 'Website', val: 'www.ogpservices.co.za' },
 ]

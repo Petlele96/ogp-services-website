@@ -27,7 +27,7 @@ const credentials = [
   { l: 'COIDA', v: 'Good Standing ✓', ok: true },
   { l: 'CIPC', v: 'Registered ✓', ok: true },
   { l: 'Reg Number', v: '2019/343931/07', ok: false },
-  { l: 'Email', v: 'info@ogpservices.co.za', ok: false },
+  { l: 'Email', v: 'gratitude@ogpservices.co.za', ok: false },
   { l: 'Website', v: 'www.ogpservices.co.za', ok: false },
 ]
 

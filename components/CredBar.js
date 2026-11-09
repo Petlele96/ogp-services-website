@@ -127,7 +127,7 @@ export function Stats() {
 // ── EMAIL STRIP ───────────────────────────────────────────
 export function EmailStrip() {
   const copy = () => {
-    navigator.clipboard.writeText('info@ogpservices.co.za').catch(() => {})
+    navigator.clipboard.writeText('gratitude@ogpservices.co.za').catch(() => {})
   }
 
   return (
@@ -138,8 +138,7 @@ export function EmailStrip() {
       justifyContent: 'space-between', flexWrap: 'wrap', gap: '20px',
     }}>
       {[
-        { label: 'Director — OG Petlele', val: 'gratitude@ogpservices.co.za' },
-        { label: 'General & Tender Enquiries', val: 'info@ogpservices.co.za' },
+        { label: 'Email OG Petlele, Director', val: 'gratitude@ogpservices.co.za' },
       ].map(e => (
         <div key={e.val}>
           <div style={{

@@ -70,7 +70,6 @@ export default function Footer() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
             {[
               { href: 'tel:+27795335440', text: '079 533 5440' },
-              { href: 'mailto:info@ogpservices.co.za', text: 'info@ogpservices.co.za' },
               { href: 'mailto:gratitude@ogpservices.co.za', text: 'gratitude@ogpservices.co.za' },
               { href: '#top', text: 'www.ogpservices.co.za' },
             ].map(l => (
