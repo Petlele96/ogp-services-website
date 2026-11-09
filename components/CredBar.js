@@ -93,7 +93,7 @@ export function Clients() {
 export function Stats() {
   const stats = [
     { n: '7', l: 'Service Divisions' },
-    { n: '6', l: 'Projects on Record' },
+    { n: '5', l: 'Projects on Record' },
     { n: '2019', l: 'Year Established' },
     { n: 'CSD', l: 'MAAA130064' },
   ]
