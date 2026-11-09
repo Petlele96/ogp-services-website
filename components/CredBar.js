@@ -7,10 +7,10 @@ const CLOUD = 'https://res.cloudinary.com/dahhugaqf/image/upload'
 // ── CREDENTIALS BAR ──────────────────────────────────────
 export function CredBar() {
   const creds = [
-    { label: 'CIDB', sub: 'Registered' },
-    { label: 'B-BBEE', sub: 'Compliant' },
     { label: 'CSD', sub: 'Registered' },
-    { label: 'SARS', sub: 'Tax Cleared' },
+    { label: 'B-BBEE', sub: 'Compliant' },
+    { label: 'SARS', sub: 'Tax Compliant' },
+    { label: 'COIDA', sub: 'Good Standing' },
     { label: 'CIPC', sub: 'Registered' },
   ]
 
@@ -92,10 +92,10 @@ export function Clients() {
 // ── STATS BAR ─────────────────────────────────────────────
 export function Stats() {
   const stats = [
-    { n: '7', l: 'Service Capabilities' },
-    { n: '3+', l: 'Completed Contracts' },
-    { n: '100%', l: 'Procurement Compliant' },
+    { n: '5', l: 'Service Divisions' },
+    { n: '6', l: 'Projects on Record' },
     { n: '2019', l: 'Year Established' },
+    { n: 'CSD', l: 'MAAA130064' },
   ]
 
   return (

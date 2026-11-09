@@ -12,14 +12,13 @@ const contactItems = [
 ]
 
 const enquiryTypes = [
-  'Request for Quotation',
-  'Grass Cutting Contract',
-  'Fencing & Boundary Walls',
-  'Plumbing & Sanitation',
-  'Roads & Stormwater',
-  'Building Maintenance',
-  'Mining Site Services',
-  'Subcontracting Opportunity',
+  'Request a Quote',
+  'Civil Construction',
+  'Mining Support Services',
+  'Industrial & Commercial Cleaning',
+  'Vegetation Control & Landscaping',
+  'Waste & Spillage Management',
+  'Partnership or Subcontracting',
   'General Enquiry',
 ]
 

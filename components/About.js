@@ -21,10 +21,10 @@ const credentials = [
   { l: 'Head Office', v: 'Rustenburg, North West', ok: false },
   { l: 'Phone', v: '079 533 5440', ok: false },
   { l: 'Operating Area', v: 'North West Province & Beyond', ok: false },
-  { l: 'CIDB', v: 'Registered ✓', ok: true },
   { l: 'B-BBEE', v: 'Compliant ✓', ok: true },
-  { l: 'CSD', v: 'Registered ✓', ok: true },
-  { l: 'SARS Tax', v: 'Cleared ✓', ok: true },
+  { l: 'CSD No.', v: 'MAAA130064 ✓', ok: true },
+  { l: 'SARS Tax', v: 'Compliant ✓', ok: true },
+  { l: 'COIDA', v: 'Good Standing ✓', ok: true },
   { l: 'CIPC', v: 'Registered ✓', ok: true },
   { l: 'Reg Number', v: '2019/343931/07', ok: false },
   { l: 'Email', v: 'info@ogpservices.co.za', ok: false },
@@ -60,8 +60,8 @@ export default function About() {
           }}>Who We Are.</h2>
 
           {[
-            'OGP Services (Pty) Ltd is a CIDB-registered civil contractor and mining support company based in Rustenburg, North West Province. We are locally owned, community-rooted, and built to deliver on the ground — not just on paper.',
-            'Founded in 2019 by OG Petlele, OGP Services has built its reputation through real project delivery for Royal Bafokeng Administration and Sibanye Stillwater. We bring full procurement compliance, a local workforce, and a deep understanding of the Rustenburg mining and municipal environment to every contract we take on.',
+            'OGP Services (Pty) Ltd is a Rustenburg contractor for civil construction, cleaning, vegetation control and mining support. We are locally owned, community-rooted, and built to deliver on the ground — not just on paper.',
+            'Founded in 2019 by OG Petlele, OGP Services has built its reputation through real project delivery for Royal Bafokeng Administration and Sibanye Stillwater. We bring CSD registration, tax compliance, a local workforce, and a close understanding of the Rustenburg mining and community environment to every contract we take on.',
             'We operate as a primary contractor, a specialist subcontractor, or as part of a consortium — structured to meet the requirements of mines, government departments, and large construction companies operating in North West Province.',
           ].map((text, i) => (
             <p key={i} style={{
@@ -72,7 +72,7 @@ export default function About() {
             }}
               dangerouslySetInnerHTML={{
                 __html: text
-                  .replace('CIDB-registered civil contractor and mining support company', '<strong style="color:#fff;font-weight:500">CIDB-registered civil contractor and mining support company</strong>')
+                  .replace('Rustenburg contractor for civil construction, cleaning, vegetation control and mining support', '<strong style="color:#fff;font-weight:500">Rustenburg contractor for civil construction, cleaning, vegetation control and mining support</strong>')
                   .replace('OG Petlele', '<strong style="color:#fff;font-weight:500">OG Petlele</strong>')
                   .replace('primary contractor', '<strong style="color:#fff;font-weight:500">primary contractor</strong>')
               }}

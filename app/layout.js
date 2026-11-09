@@ -1,15 +1,31 @@
 import './globals.css'
+import TopBar from '../components/TopBar'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
+import WhatsAppButton from '../components/WhatsAppButton'
 
 export const metadata = {
-  title: 'OGP Services (Pty) Ltd | Civil Contractor & Mining Support — Rustenburg',
-  description: 'OGP Services — CIDB registered civil contractor and mining support company based in Rustenburg, North West. Track record with Royal Bafokeng Administration and Sibanye Stillwater. Reg: 2019/343931/07.',
-  keywords: 'civil contractor Rustenburg, mining support Rustenburg, OGP Services, grass cutting mine Rustenburg, boundary wall construction, CIDB contractor North West, B-BBEE contractor, Sibanye Stillwater supplier, RBA contractor',
+  metadataBase: new URL('https://ogpservices.co.za'),
+  title: {
+    default: 'OGP Services | Civil Construction, Cleaning & Mining Support in Rustenburg',
+    template: '%s | OGP Services',
+  },
+  description:
+    'OGP Services is a Rustenburg contractor for civil construction, industrial cleaning, vegetation control and mining support. Work completed for Sibanye-Stillwater and Royal Bafokeng Administration.',
+  keywords:
+    'mining support services Rustenburg, industrial cleaning Rustenburg, grass cutting North West, civil construction Rustenburg, OGP Services',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <TopBar />
+        <Nav />
+        {children}
+        <Footer />
+        <WhatsAppButton />
+      </body>
     </html>
   )
 }

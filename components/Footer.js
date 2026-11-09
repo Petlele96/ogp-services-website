@@ -1,28 +1,26 @@
 'use client'
 
 const services = [
-  'Grass Cutting & Vegetation',
-  'Fencing & Boundary Walls',
-  'Plumbing & Sanitation',
-  'Roads & Stormwater',
-  'Water Tankers & Logistics',
-  'Building Maintenance',
-  'Mining Site Services',
+  { label: 'Civil Construction', href: '/services#civil-construction' },
+  { label: 'Mining Support Services', href: '/services#mining-support' },
+  { label: 'Industrial & Commercial Cleaning', href: '/services#industrial-cleaning' },
+  { label: 'Vegetation Control & Landscaping', href: '/services#vegetation-control' },
+  { label: 'Waste & Spillage Management', href: '/services#waste-and-spillage' },
 ]
 
 const company = [
-  { label: 'About Us', href: '#about' },
-  { label: 'Our Work', href: '#gallery' },
-  { label: 'Track Record', href: '#track' },
-  { label: 'Contact Us', href: '#contact' },
-  { label: 'Get a Quote', href: '#contact' },
+  { label: 'About Us', href: '/#about' },
+  { label: 'Services', href: '/services' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'Contact Us', href: '/#contact' },
+  { label: 'Request a Quote', href: '/#contact' },
 ]
 
 const compliance = [
-  'CIDB Registration',
-  'B-BBEE Certificate',
   'CSD Registration',
-  'Tax Clearance',
+  'B-BBEE Status',
+  'SARS Tax Compliance',
+  'COIDA Good Standing',
   'CIPC Registration',
 ]
 
@@ -53,12 +51,12 @@ export default function Footer() {
           }}>
             Civil Contractor & Mining Support Services.<br />
             Based in Rustenburg, North West.<br />
-            Serving mines, municipalities, and government since 2019.
+            Working for mines and community clients since 2019.
           </p>
 
           {/* Compliance badges */}
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '24px' }}>
-            {['CIDB', 'B-BBEE', 'CSD', 'Tax Cleared'].map(b => (
+            {['CSD', 'B-BBEE', 'SARS Tax', 'COIDA'].map(b => (
               <span key={b} style={{
                 fontFamily: 'Oswald, sans-serif', fontSize: '9px',
                 fontWeight: 400, letterSpacing: '1.5px', textTransform: 'uppercase',
@@ -98,15 +96,15 @@ export default function Footer() {
           }}>Services</h5>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '11px' }}>
             {services.map(s => (
-              <li key={s}>
-                <a href="#services" style={{
+              <li key={s.label}>
+                <a href={s.href} style={{
                   fontSize: '13px', fontWeight: 300,
                   color: 'rgba(255,255,255,0.35)', textDecoration: 'none',
                   transition: 'color 0.2s', fontFamily: 'Source Sans 3, sans-serif',
                 }}
                   onMouseEnter={e => e.target.style.color = '#fff'}
                   onMouseLeave={e => e.target.style.color = 'rgba(255,255,255,0.35)'}
-                >{s}</a>
+                >{s.label}</a>
               </li>
             ))}
           </ul>
@@ -145,7 +143,7 @@ export default function Footer() {
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '11px' }}>
             {compliance.map(c => (
               <li key={c}>
-                <a href="#about" style={{
+                <a href="/#about" style={{
                   fontSize: '13px', fontWeight: 300,
                   color: 'rgba(255,255,255,0.35)', textDecoration: 'none',
                   transition: 'color 0.2s', fontFamily: 'Source Sans 3, sans-serif',
@@ -176,7 +174,7 @@ export default function Footer() {
           fontSize: '11px', color: 'rgba(255,255,255,0.18)',
           fontFamily: 'Oswald, sans-serif', letterSpacing: '0.5px',
         }}>
-          Reg No: 2019/343931/07 &middot; CIDB &middot; B-BBEE &middot; CSD
+          Reg No: 2019/343931/07 &middot; CSD MAAA130064 &middot; B-BBEE
         </div>
       </div>
 

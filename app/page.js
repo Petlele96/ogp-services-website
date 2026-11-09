@@ -1,30 +1,28 @@
-'use client'
-
-import Nav from '../components/Nav'
 import Hero from '../components/Hero'
 import { CredBar, Clients, Stats, EmailStrip } from '../components/CredBar'
-import Services from '../components/Services'
+import WhyOGP from '../components/WhyOGP'
+import ServiceCards from '../components/ServiceCards'
+import RecentProjects from '../components/RecentProjects'
 import Gallery from '../components/Gallery'
-import TrackRecord from '../components/TrackRecord'
 import About from '../components/About'
+import CtaBand from '../components/CtaBand'
 import Contact from '../components/Contact'
-import Footer from '../components/Footer'
 
 export default function Home() {
   return (
     <main>
-      <Nav />
       <Hero />
       <CredBar />
       <Clients />
-      <Services />
+      <WhyOGP />
+      <ServiceCards />
+      <RecentProjects />
       <Gallery />
-      <TrackRecord />
       <Stats />
       <About />
+      <CtaBand />
       <EmailStrip />
       <Contact />
-      <Footer />
     </main>
   )
 }

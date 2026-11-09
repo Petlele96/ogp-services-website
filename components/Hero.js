@@ -81,12 +81,12 @@ export default function Hero() {
           maxWidth: '500px', lineHeight: 1.7, marginBottom: '40px',
           fontFamily: 'Source Sans 3, sans-serif',
         }}>
-          OGP Services (Pty) Ltd is a <strong style={{ color: '#fff', fontWeight: 500 }}>CIDB-registered civil contractor and mining support company</strong> based in Rustenburg &mdash; with a proven track record at Royal Bafokeng Administration and Sibanye Stillwater.
+          OGP Services is a <strong style={{ color: '#fff', fontWeight: 500 }}>Rustenburg contractor</strong> for civil construction, cleaning, vegetation control and mining support. We have worked for Sibanye-Stillwater and Royal Bafokeng Administration.
         </p>
 
         {/* Buttons */}
         <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
-          <a href="#services" style={{
+          <a href="/services" style={{
             fontFamily: 'Oswald, sans-serif', fontSize: '12px',
             fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase',
             background: '#E8650A', color: '#fff',
@@ -96,7 +96,7 @@ export default function Hero() {
             onMouseEnter={e => e.target.style.background = '#FF7A20'}
             onMouseLeave={e => e.target.style.background = '#E8650A'}
           >Our Services</a>
-          <a href="#gallery" style={{
+          <a href="/#contact" style={{
             fontFamily: 'Oswald, sans-serif', fontSize: '12px',
             fontWeight: 500, letterSpacing: '2px', textTransform: 'uppercase',
             background: 'transparent', color: '#fff',
@@ -106,7 +106,7 @@ export default function Hero() {
           }}
             onMouseEnter={e => { e.target.style.borderColor = '#fff'; e.target.style.background = 'rgba(255,255,255,0.08)' }}
             onMouseLeave={e => { e.target.style.borderColor = 'rgba(255,255,255,0.4)'; e.target.style.background = 'transparent' }}
-          >See Our Work</a>
+          >Request a Quote</a>
         </div>
       </div>
 
