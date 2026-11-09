@@ -21,7 +21,7 @@ export default function Hero() {
 
   return (
     <section id="top" style={{
-      height: '100vh', minHeight: '620px',
+      minHeight: '100vh', paddingTop: '130px', boxSizing: 'border-box',
       position: 'relative', overflow: 'hidden',
       display: 'flex', alignItems: 'flex-end',
     }}>

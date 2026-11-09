@@ -54,7 +54,6 @@ export default function Nav() {
           style={{
             height: '64px', width: 'auto',
             objectFit: 'contain', display: 'block',
-            mixBlendMode: 'lighten',
           }}
         />
       </Link>
