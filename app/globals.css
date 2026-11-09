@@ -252,3 +252,6 @@ h1, h2, h3, h4, h5 {
 .svc-block.alt .bullets li span { color: #666; }
 .partner-tag { margin-left: 10px; font-size: 10px; font-weight: 500; letter-spacing: 1.5px; color: rgba(255,255,255,0.7); border: 1px solid rgba(255,255,255,0.3); padding: 2px 8px; vertical-align: middle; }
 .svc-block.alt .partner-tag { color: #555; border-color: #bbb; }
+
+.proj-photos.three { grid-template-columns: 1fr 1fr; }
+.proj-photos.three img:first-child { grid-column: span 2; height: 210px; }
